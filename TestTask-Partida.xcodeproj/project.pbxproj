@@ -42,6 +42,7 @@
 				Packages/Core/NetworkClient,
 				Packages/Core/NetworkMonitor,
 				Packages/Core/WebSocketClient,
+				Packages/Features/MarketsScreen,
 				Packages/Features/NoInternetConnectionScreen,
 				Packages/Features/StubScreen,
 			);
