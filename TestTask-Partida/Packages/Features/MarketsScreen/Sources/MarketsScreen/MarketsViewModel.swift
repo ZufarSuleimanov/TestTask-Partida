@@ -86,7 +86,11 @@ public final class MarketsViewModel {
             }
     }
     
-    func resetAllTags() {
+    private func resetTabsWithLine() {
+        tabsWithLine.forEach { $0.isSelected = false }
+    }
+    
+    private func resetAllTags() {
         tagsUsds.forEach { $0.isSelected = false }
         tagsBtc.forEach { $0.isSelected = false }
         tagsDefi.forEach { $0.isSelected = false }
@@ -99,6 +103,8 @@ public final class MarketsViewModel {
             do {
                 let response = try await marketService.fetchMarketList()
                 await MainActor.run {
+                    self.resetTabsWithLine()
+                    self.resetAllTags()
                     self.makeTagModels(tabs: response.response.tabs)
                     self.makePairCellViewModels(currencies: response.response.currencies)
                 }
@@ -108,7 +114,7 @@ public final class MarketsViewModel {
         }
     }
     
-    func makeTagModels(tabs: Tabs) {
+    private func makeTagModels(tabs: Tabs) {
         func build(from value: TabsValue?) -> [TagItemModel] {
             value?
                 .values
@@ -132,7 +138,7 @@ public final class MarketsViewModel {
         tagsUsds.first?.isSelected = true
     }
     
-    func makePairCellViewModels(currencies: [String: CurrencyInfo]) {
+    private func makePairCellViewModels(currencies: [String: CurrencyInfo]) {
         pairs = currencies.reduce(into: [:]) { result, element in
             let (key, value) = element
             let model = PairCellViewModel(
@@ -147,7 +153,7 @@ public final class MarketsViewModel {
         }
     }
     
-    func extractSecondComponent(from string: String) -> String {
+    private func extractSecondComponent(from string: String) -> String {
         return string.split(separator: "/").dropFirst().first.map(String.init) ?? string
     }
 
