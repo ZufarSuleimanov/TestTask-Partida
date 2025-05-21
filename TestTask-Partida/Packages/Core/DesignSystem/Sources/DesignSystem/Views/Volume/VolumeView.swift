@@ -28,7 +28,7 @@ public struct MarketVolumeView: View {
                     .foregroundColor(Resources.Colors.Interface.textSecondary.rawValue.color)
             }
 
-            var newVolume = volume == "0" ? "Vol \(volume)" : "Vol \(volume)М"
+            let newVolume = volume == "0" ? "Vol \(volume)" : "Vol \(volume)М"
             Text(newVolume)
                 .font(Resources.Font.SFPro12)
                 .foregroundColor(.gray)

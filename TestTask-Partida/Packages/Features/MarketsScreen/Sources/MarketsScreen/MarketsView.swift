@@ -1,4 +1,5 @@
 import SwiftUI
+import MarketService
 import DesignSystem
 
 public struct MarketsView: View {
@@ -105,4 +106,16 @@ extension MarketsView {
             viewModel.initializeWebSocketFlow()
         }
     }
+}
+
+ #Preview {
+    let mockViewModel = MarketsViewModel(
+        args: .init(
+            marketService: DummyMarketService(
+                response: makeMarketListResponseFromJSON()
+            )
+        )
+    )
+    
+    MarketsView(viewModel: Bindable(wrappedValue: mockViewModel))
 }

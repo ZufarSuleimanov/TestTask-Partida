@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		5BA2151E2DDE778F000119F4 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 5BA2151D2DDE778F000119F4 /* Factory */; };
 		5BA215222DDE77BF000119F4 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 5BA215212DDE77BF000119F4 /* DesignSystem */; };
+		5BB628FB2DDE7A4100B8D205 /* MarketService in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB628FA2DDE7A4100B8D205 /* MarketService */; };
+		5BB628FD2DDE7A4600B8D205 /* MarketsScreen in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB628FC2DDE7A4600B8D205 /* MarketsScreen */; };
+		5BB628FF2DDE7A4A00B8D205 /* NetworkClient in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB628FE2DDE7A4A00B8D205 /* NetworkClient */; };
+		5BB629012DDE7A4D00B8D205 /* NetworkMonitor in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB629002DDE7A4D00B8D205 /* NetworkMonitor */; };
+		5BB629032DDE7A5500B8D205 /* NoInternetConnectionScreen in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB629022DDE7A5500B8D205 /* NoInternetConnectionScreen */; };
+		5BB629052DDE7A5900B8D205 /* StubScreen in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB629042DDE7A5900B8D205 /* StubScreen */; };
+		5BB629072DDE7A6300B8D205 /* WebSocketClient in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB629062DDE7A6300B8D205 /* WebSocketClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,7 @@
 		5BA215202DDE77AD000119F4 /* Exceptions for "TestTask-Partida" folder in "TestTask-Partida" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"App/Components/Root/TestTask-Partida.xctestplan",
 				Packages/Core/DesignSystem,
 				Packages/Core/NetworkClient,
 				Packages/Core/NetworkMonitor,
@@ -77,7 +85,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB629052DDE7A5900B8D205 /* StubScreen in Frameworks */,
+				5BB629012DDE7A4D00B8D205 /* NetworkMonitor in Frameworks */,
+				5BB628FD2DDE7A4600B8D205 /* MarketsScreen in Frameworks */,
+				5BB629032DDE7A5500B8D205 /* NoInternetConnectionScreen in Frameworks */,
 				5BA2151E2DDE778F000119F4 /* Factory in Frameworks */,
+				5BB628FB2DDE7A4100B8D205 /* MarketService in Frameworks */,
+				5BB628FF2DDE7A4A00B8D205 /* NetworkClient in Frameworks */,
+				5BB629072DDE7A6300B8D205 /* WebSocketClient in Frameworks */,
 				5BA215222DDE77BF000119F4 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +164,13 @@
 			packageProductDependencies = (
 				5BA2151D2DDE778F000119F4 /* Factory */,
 				5BA215212DDE77BF000119F4 /* DesignSystem */,
+				5BB628FA2DDE7A4100B8D205 /* MarketService */,
+				5BB628FC2DDE7A4600B8D205 /* MarketsScreen */,
+				5BB628FE2DDE7A4A00B8D205 /* NetworkClient */,
+				5BB629002DDE7A4D00B8D205 /* NetworkMonitor */,
+				5BB629022DDE7A5500B8D205 /* NoInternetConnectionScreen */,
+				5BB629042DDE7A5900B8D205 /* StubScreen */,
+				5BB629062DDE7A6300B8D205 /* WebSocketClient */,
 			);
 			productName = "TestTask-Partida";
 			productReference = 5BE45DF02DDE6A1B00E04376 /* TestTask-Partida.app */;
@@ -631,6 +653,34 @@
 		5BA215212DDE77BF000119F4 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignSystem;
+		};
+		5BB628FA2DDE7A4100B8D205 /* MarketService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MarketService;
+		};
+		5BB628FC2DDE7A4600B8D205 /* MarketsScreen */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MarketsScreen;
+		};
+		5BB628FE2DDE7A4A00B8D205 /* NetworkClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkClient;
+		};
+		5BB629002DDE7A4D00B8D205 /* NetworkMonitor */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkMonitor;
+		};
+		5BB629022DDE7A5500B8D205 /* NoInternetConnectionScreen */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NoInternetConnectionScreen;
+		};
+		5BB629042DDE7A5900B8D205 /* StubScreen */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StubScreen;
+		};
+		5BB629062DDE7A6300B8D205 /* WebSocketClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WebSocketClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

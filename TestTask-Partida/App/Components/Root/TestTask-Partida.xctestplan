@@ -1,0 +1,49 @@
+{
+  "configurations" : [
+    {
+      "id" : "A9E92FC8-7080-4352-8399-208C42FD84FF",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TestTask-Partida.xcodeproj",
+      "identifier" : "5BE45DEF2DDE6A1B00E04376",
+      "name" : "TestTask-Partida"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TestTask-Partida\/Packages\/Features\/MarketsScreen",
+        "identifier" : "MarketsScreenTests",
+        "name" : "MarketsScreenTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TestTask-Partida\/Packages\/Features\/NoInternetConnectionScreen",
+        "identifier" : "NoInternetConnectionScreenTests",
+        "name" : "NoInternetConnectionScreenTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TestTask-Partida\/Packages\/Flows\/MarketService",
+        "identifier" : "MarketServiceTests",
+        "name" : "MarketServiceTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TestTask-Partida\/Packages\/Features\/StubScreen",
+        "identifier" : "StubScreenTests",
+        "name" : "StubScreenTests"
+      }
+    }
+  ],
+  "version" : 1
+}

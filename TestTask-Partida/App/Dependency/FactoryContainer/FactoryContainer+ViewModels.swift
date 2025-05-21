@@ -6,7 +6,7 @@ extension Container {
         self {
             TabBarViewModel(tabs: [
                 TabBarItem(
-                    title: "Stub",
+                    title: "Home",
                     systemImage: "house.fill",
                     viewBuilder: { [weak self] in
                         AnyView(self?.makeStubScreen())
@@ -17,6 +17,20 @@ extension Container {
                     systemImage: "chart.bar.xaxis",
                     viewBuilder: { [weak self] in
                         AnyView(self?.makeMarketsScreen())
+                    }
+                ),
+                TabBarItem(
+                    title: "Trade",
+                    systemImage: "bitcoinsign.arrow.trianglehead.counterclockwise.rotate.90",
+                    viewBuilder: { [weak self] in
+                        AnyView(self?.makeStubScreen())
+                    }
+                ),
+                TabBarItem(
+                    title: "Assets",
+                    systemImage: "rectangle.3.group.fill",
+                    viewBuilder: { [weak self] in
+                        AnyView(self?.makeStubScreen())
                     }
                 )
             ])
