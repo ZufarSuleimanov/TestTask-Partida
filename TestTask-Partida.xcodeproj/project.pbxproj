@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5BA2151E2DDE778F000119F4 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 5BA2151D2DDE778F000119F4 /* Factory */; };
+		5BA215222DDE77BF000119F4 /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 5BA215212DDE77BF000119F4 /* DesignSystem */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5BE45DFE2DDE6A1C00E04376 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,22 @@
 		5BE45E072DDE6A1C00E04376 /* TestTask-PartidaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TestTask-PartidaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5BA215202DDE77AD000119F4 /* Exceptions for "TestTask-Partida" folder in "TestTask-Partida" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Packages/Core/DesignSystem,
+			);
+			target = 5BE45DEF2DDE6A1B00E04376 /* TestTask-Partida */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5BE45DF22DDE6A1B00E04376 /* TestTask-Partida */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5BA215202DDE77AD000119F4 /* Exceptions for "TestTask-Partida" folder in "TestTask-Partida" target */,
+			);
 			path = "TestTask-Partida";
 			sourceTree = "<group>";
 		};
@@ -52,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA2151E2DDE778F000119F4 /* Factory in Frameworks */,
+				5BA215222DDE77BF000119F4 /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BA2151C2DDE778F000119F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BE45DE72DDE6A1B00E04376 = {
 			isa = PBXGroup;
 			children = (
 				5BE45DF22DDE6A1B00E04376 /* TestTask-Partida */,
 				5BE45E002DDE6A1C00E04376 /* TestTask-PartidaTests */,
 				5BE45E0A2DDE6A1C00E04376 /* TestTask-PartidaUITests */,
+				5BA2151C2DDE778F000119F4 /* Frameworks */,
 				5BE45DF12DDE6A1B00E04376 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +140,8 @@
 			);
 			name = "TestTask-Partida";
 			packageProductDependencies = (
+				5BA2151D2DDE778F000119F4 /* Factory */,
+				5BA215212DDE77BF000119F4 /* DesignSystem */,
 			);
 			productName = "TestTask-Partida";
 			productReference = 5BE45DF02DDE6A1B00E04376 /* TestTask-Partida.app */;
@@ -408,8 +438,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,8 +471,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,6 +614,18 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BA2151D2DDE778F000119F4 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BE45E602DDE735800E04376 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		5BA215212DDE77BF000119F4 /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5BE45DE82DDE6A1B00E04376 /* Project object */;
 }
