@@ -39,6 +39,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Packages/Core/DesignSystem,
+				Packages/Core/NetworkMonitor,
 			);
 			target = 5BE45DEF2DDE6A1B00E04376 /* TestTask-Partida */;
 		};
