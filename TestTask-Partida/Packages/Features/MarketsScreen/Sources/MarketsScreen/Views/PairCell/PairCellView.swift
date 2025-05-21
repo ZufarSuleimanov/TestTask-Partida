@@ -24,3 +24,18 @@ struct PairCellView: View {
         }
     }
 }
+
+#Preview {
+    PairCellView(
+        model: Bindable(
+            wrappedValue: .init(
+                key: "BTC/USDT",
+                pairName: "BTC/USDT",
+                volume: "100.47",
+                price: 0.000000341788,
+                priceUsd: 0.000000342,
+                change: 1.4
+            )
+        )
+    )
+}
