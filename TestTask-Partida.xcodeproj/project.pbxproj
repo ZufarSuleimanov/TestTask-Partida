@@ -42,6 +42,7 @@
 				Packages/Core/NetworkClient,
 				Packages/Core/NetworkMonitor,
 				Packages/Core/WebSocketClient,
+				Packages/Features/StubScreen,
 			);
 			target = 5BE45DEF2DDE6A1B00E04376 /* TestTask-Partida */;
 		};
