@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TestTask_PartidaApp: App {
+    @State var appCoordinator = AppCoordinatorViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppCoordinatorView(coordinator: appCoordinator)
         }
     }
 }
